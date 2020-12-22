@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #fff;
+}
+
+/* common text and colors  */
+.greenText {
+	color: green;
+}
+/* Navbar  */
+.nav-item {
+	margin-left: 30px !important;
+}
+.nav-link:hover {
+	color: brown !important;
+}
+/* home image  */
+.home_Pic_Text a {
+	font-size: 24px;
+	color: red;
+	text-decoration: underline;
+}
+.overlay1 {
+	top: 30% !important;
+	left: 10% !important;
+}
+.overlay1 h2 {
+	font-size: 60px;
+	color: orangered;
+}
+.overlay1 p {
+	font-size: 40px;
+	margin-bottom: 0 !important;
+}
+
+/* offer */
+.offer {
+	background-color: rgb(211, 170, 128);
+}
+.offerimg img {
+	width: 100%;
+	height: 100%;
+	padding: 1% 5%;
+}
+
+/* up to 90% off  */
+.offer_90 {
+	padding: 3% 0;
+}
+.bedPic {
+	border: 1px solid black;
+}
+
+/* Christmas Sale  */
+.product {
+	border: 1px solid orangered;
+	background-color: lightsalmon;
+}
+
+/* clearence sale */
+.clearence_saleBg {
+	background-image: linear-gradient(to right, #d5cece, #5d8fce);
+}
+
+/* footer  */
+.playstores_App img {
+	width: 15%;
+}
+.socialMedia i:hover {
+	transform: scale(1.3);
+}
+.footer_list li {
+	list-style: none;
+	cursor: pointer;
+}
+.footer_list li:hover {
+	color: brown;
+}
+
+@media screen and (max-width: 991.98px) {
+	.overlay1 {
+		top: 8% !important;
+		left: 5% !important;
+	}
+	.productCard .card-body h5 {
+		font-size: 0.8rem !important;
+	}
+	.productCard .card-body h4 {
+		font-size: 0.7rem !important;
+	}
+	.productCard .card-body a {
+		font-size: 0.6rem !important;
+		padding: 4px 10px !important;
+	}
+	.productCard .card-body {
+		padding: 5px 10px !important;
+		text-align: center;
+	}
+	.cards-clothes .col-6 {
+		padding: 5px 6px !important;
+	}
+	.clearence_saleBg {
+		padding-top: 0 !important;
+	}
+	/* subcribe newsletter  */
+	.subcripForm button {
+		margin-left: 60px;
+	}
+	/* playstore app icons  */
+	.playstores_App {
+		margin-bottom: 1rem !important;
+	}
+}
+/*  mobile  */
+@media screen and (max-width: 576px) {
+	/* navbar  */
+	.nav-item {
+		margin-left: 0px !important;
+	}
+	/* home image  */
+	.overlay1 {
+		top: -5% !important;
+		left: 3% !important;
+	}
+	.overlay1 p {
+		font-size: 18px;
+		margin-bottom: 0 !important;
+	}
+	.overlay1 h2 {
+		font-size: 24px !important;
+	}
+
+	/* up to 90 off  */
+	.offer_90 h1 {
+		font-size: 1.5rem !important;
+	}
+
+	/* Christmas  Sale  */
+	.titleChristmas {
+		font-size: 1.4rem;
+	}
+	.productCard {
+		width: 12rem !important;
+	}
+	.subscribeNews {
+		margin-left: 16px !important;
+	}
+
+	/* subcrbe newsletter  */
+	.subcripForm {
+margin-left: 60px !important;
+	}
+}

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>NewChic Ecomerce store</title>
+</head>
+
+<body>
+    <div class="HomePage container-fluid">
+        <div class="alert alert-success text-center" role="alert">
+            Lorem ipsum dolor sit amett.suscipit praesentium?<a href="#" class="alert-link">an
+                example link</a>. click if you like.
+        </div>
+        <div class="brand d-flex justify-content-between">
+            <h2>NEW<span class="greenText">CHIC</span></h2>
+            <p>Lorem ipsum<a href="#" class="greenText"> Click Here</a></p>
+        </div>
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Plus Size</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flash Deal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Clearance</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Men
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Shirts</a>
+                            <a class="dropdown-item" href="#">Sweters</a>
+                            <a class="dropdown-item" href="#">Jackets</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">viwe more</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Women
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="#">Kurti</a>
+                            <a class="dropdown-item" href="#">T-shirts</a>
+                            <a class="dropdown-item" href="#">Shoes</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">viwe more</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button onclick="loginFuc()" class="btn btn-outline-success my-2 my-sm-0">Log In</button>
+                    <button  onclick="signUpFuc()"class="btn btn-outline-success my-2 my-sm-0" style="margin-left: 5px;">Sign
+                        Up</button>
+                </form>
+            </div>
+        </nav>
+        <!-- first section Hot sale -->
+        <div class="card bg-light text-white home_Pic_Text">
+            <img src="home-photo.png" class="card-img" alt="homepage-pic">
+            <div class="card-img-overlay overlay1">
+                <h2 class="card-title">Hot sale</h2>
+                <p class="card-text">Buy 2 Pics get 50% OFF</p>
+                <p class="card-text">Buy 3 Pics get 60% OFF</p>
+            </div>
+        </div>
+
+        <!-- 90% OFF  -->
+        <div class="offer container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 offer_90 text-center">
+                    <h1>UP TO 80% OFF</h1>
+                    <button class="btn btn-dark">Shop Now</button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-md-4 p-1">
+                            <img class="img-fluid bedPic border-dark" src="bedPicture.jpg" alt="Bed set picture">
+                        </div>
+                        <div class="col-md-4 p-1">
+                            <img class="img-fluid bedPic" src="bedPicture.jpg" alt="Bed set picture">
+                        </div>
+                        <div class="col-md-4 p-1">
+                            <img class="img-fluid bedPic" src="bedPicture.jpg" alt="Bed set picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Christmas Sale  -->
+        <div class="chrismas_sale ">
+            <div class="alert alert-danger container text-center mt-2" role="alert">
+                <h2 class="titleChristmas"> Christmas New Look For Women </h2>
+            </div>
+            <div class="cards-clothes row">
+                <div class="col-6 col-md-2">
+                    <div class="card productCard">
+                        <img src="https://source.unsplash.com/100x100/?clothes,nighware"
+                            class="card-img-top p-2 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5>Product Name</h5>
+                            <h4 class="mb-2">$11.95</h4>
+                            <a href="#" class="btn btn-primary" onclick="orderNow()">order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card productCard">
+                        <img src="https://source.unsplash.com/100x100/?clothes,nighware"
+                            class="card-img-top p-2 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5>Product Name</h5>
+                            <h4 class="mb-2">$11.95</h4>
+                            <a href="#" class="btn btn-primary" onclick="orderNow()">order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card productCard">
+                        <img src="https://source.unsplash.com/100x100/?clothes,nighware"
+                            class="card-img-top p-2 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5>Product Name</h5>
+                            <h4 class="mb-2">$11.95</h4>
+                            <a href="#" class="btn btn-primary" onclick="orderNow()">order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card productCard">
+                        <img src="https://source.unsplash.com/100x100/?clothes,nighware"
+                            class="card-img-top p-2 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5>Product Name</h5>
+                            <h4 class="mb-2">$11.95</h4>
+                            <a href="#" class="btn btn-primary" onclick="orderNow()">order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card productCard">
+                        <img src="https://source.unsplash.com/100x100/?clothes,nighware"
+                            class="card-img-top p-2 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5>Product Name</h5>
+                            <h4 class="mb-2">$11.95</h4>
+                            <a href="#" class="btn btn-primary" onclick="orderNow()">order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card productCard">
+                        <img src="https://source.unsplash.com/100x100/?clothes,nighware"
+                            class="card-img-top p-2 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5>Product Name</h5>
+                            <h4 class="mb-2">$11.95</h4>
+                            <a href="#" class="btn btn-primary" onclick="orderNow()">order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jewellery page  -->
+        <div class="jewelleryPage container-fluid pt-2">
+            <div class="row">
+                <div class="col-md-6 col-12 p-0 m-0 ">
+                    <div class="card bg-light text-white">
+                        <img src="https://source.unsplash.com/900x300/?shopping,christmas" class="card-img"
+                            alt="homepage-pic">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title">Down to $4.99</h2>
+                            <p>Lorem ipsum dolor sit, amet fadfv Ullam molestias id vitae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-0 m-0">
+                    <div class="card bg-light text-white">
+                        <img src="https://source.unsplash.com/900x300/?shopping,jewellery" class="card-img"
+                            alt="homepage-pic">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title">jewellery Hot sales</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam molestias id vitae.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- clearence sale  -->
+        <div class="clearence_sale container-fluid pt-2 ">
+            <div class="row">
+                <div class="col-md-4 col-12 p-0 m-0 pt-5 text-center clearence_saleBg">
+                    <h2>Cleance Sale</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <button class="btn btn-primary" onclick="shopNow()">Shop Now</button>
+                </div>
+                <div class="col-md-8 col-12 p-0 m-0 ">
+                    <div class="card bg-light text-white">
+                        <img src="https://source.unsplash.com/600x200/?shopping,jewellery" class="card-img"
+                            alt="homepage-pic">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title">Hot sale</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam molestias id vitae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer  -->
+        <div class="footer mt-3">
+            <div>
+                <h5 class="text-center">Download our shopping App</h5>
+                <div class="playstores_App text-center mb-4">
+                    <img src="playstore.png" alt="play store">
+                    <img src="playstore.png" alt="play store">
+                </div>
+            </div>
+            <div class="socialMedia text-center mb-5">
+                <i class="ml-2 fab fa-linkedin"></i>
+                <i class="ml-5 fab fa-pinterest-p"></i>
+                <i class="ml-5 fab fa-facebook"></i>
+                <i class="ml-5 fab fa-youtube"></i>
+                <i class="ml-5 fab fa-twitter"></i>
+            </div>
+            <div class="row subscribeNews">
+                <div class="col-12 col-md-6">
+                    <h4 class="ml-5">Subscribe our Newsletter</h4>
+                    <form class="form-inline m-4 subcripForm" action="/">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <input id="subMail" type="email" class="form-control" id="inputPassword2"
+                                placeholder="jeffbezoz@gmail.com" required>
+                        </div>
+                        <button type="submit" onsubmit="subFuncSubmit()" class="btn btn-primary mb-2"> Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-6 col-md-3">
+                        <ul class="footer_list ml-5">
+                            <li>Home</li>
+                            <li>Galary</li>
+                            <li>collection</li>
+                            <li>offers</li>
+                            <li>Home</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <ul class="footer_list ml-5">
+                            <li>About</li>
+                            <li>privacy</li>
+                            <li>licence</li>
+                            <li>Terms</li>
+                            <li>inqueries</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center container">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates vero nemo doloribus quas fugit
+                    neque eaque. Beatae veniam nostrum </p>
+                <p>Made <i class="fas fa-heart"></i> With <span style="color: rgba(39, 32, 148, 0.897);"> Parth Ardeshana
+                    </span> </p>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+        <script src="ecomerce.js"></script>
+</body>
+
+</html>
